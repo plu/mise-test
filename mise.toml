@@ -1,2 +1,5 @@
+[hooks]
+enter = "cd $MISE_PROJECT_ROOT"
+
 [tasks.test]
 run = "echo $1"
