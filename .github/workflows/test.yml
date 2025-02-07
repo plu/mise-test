@@ -54,3 +54,4 @@ jobs:
       - name: Run Mise Task
         run: |
           for i in $(seq 1 20000); do mise test $i; done
+          tail -n 5 test.log
