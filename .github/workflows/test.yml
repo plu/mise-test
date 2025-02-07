@@ -16,6 +16,8 @@ jobs:
 
       - name: Install Mise
         uses: jdx/mise-action@v2
+        with:
+          install: false
 
       - name: Create ~/.config/mise/config.toml
         run: |
