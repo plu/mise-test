@@ -29,6 +29,9 @@ jobs:
           cat >~/.config/mise/config.toml <<EOF
           [tools]
           age = "1.2.1"
+          [settings]
+          experimental = true
+          task_output = "quiet"
           EOF
 
       - name: Run Mise Task
