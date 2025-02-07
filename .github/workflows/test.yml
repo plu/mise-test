@@ -17,6 +17,14 @@ jobs:
       - name: Install Mise
         uses: jdx/mise-action@v2
 
+      - name: Create ~/.config/mise/config.toml
+        run: |
+          mkdir -p ~/.config/mise
+          cat >~/.config/mise/config.toml <<EOF
+          [tools]
+          age = "1.2.1"
+          EOF
+
       - name: Run Mise Task
         run: |
           for i in $(seq 1 20000); do mise test $i; done
