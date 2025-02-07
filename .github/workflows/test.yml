@@ -8,6 +8,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
+  MISE_AUTO_INSTALL: 'false'
 
 jobs:
   run-mise-task:
