@@ -28,7 +28,24 @@ jobs:
           mkdir -p ~/.config/mise
           cat >~/.config/mise/config.toml <<EOF
           [tools]
+          tuist = "4.40.0"
           age = "1.2.1"
+          awscli = "2.23.3"
+          direnv = "2.35.0"
+          jq = "1.7.1"
+          ruby = "3.3.3"
+          sops = "3.9.3"
+          sourcery = "2.2.6"
+          swiftformat = "0.54.0"
+          swiftlint = "0.58.2"
+          yq = "4.45.1"
+          xcbeautify = "2.23.0"
+          "spm:mono0926/LicensePlist" = "3.25.1"
+          "ubi:cli/cli" = { version = "2.65.0", exe = "gh" }
+          "ubi:git-lfs/git-lfs" = "3.6.1"
+          xcodes = "1.6.0"
+          node = "23.6.1"
+          pnpm = "10.0.0"
           [settings]
           experimental = true
           task_output = "quiet"
