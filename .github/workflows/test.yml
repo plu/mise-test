@@ -9,6 +9,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ github.token }}
   MISE_AUTO_INSTALL: false
+  MISE_LOG_LEVEL: error
   MISE_STATUS_MESSAGE_MISSING_TOOLS: never
 
 jobs:
